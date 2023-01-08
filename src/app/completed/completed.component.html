@@ -1,0 +1,12 @@
+
+<div class="contain_">
+<div *ngIf="books != undefined else elseBlock" >
+    <div class="_container_ "  *ngFor="let book of books" (click)="bookDetails(book)">
+        <img  src="../../assets/{{book.imageLink}}" alt={{book.title}}>
+        <div>{{book.title}}</div>
+    </div>
+</div>
+<ng-template #elseBlock>
+<div style="font-size: 1.5vw; margin-top: 1vh;">{{message}}</div>
+</ng-template>
+</div>

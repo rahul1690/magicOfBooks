@@ -1,0 +1,29 @@
+
+img {
+    width: 8vw;
+    height: 11vw;
+    border: 2px black solid;
+  }
+
+._container_{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5vh;
+    padding-top: 2vh;
+    margin: 1vh 0;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+.contain_{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+._container_:hover{
+    background-color: #91b6b0;
+    color: white;
+    font-weight: bold;
+}

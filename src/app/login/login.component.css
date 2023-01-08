@@ -1,0 +1,46 @@
+
+  h2 {  
+    padding-bottom: 1rem;  
+    font-weight: bold;  
+  }   
+  .form-control:focus {  
+      color: #000;  
+      background-color: #fff;  
+      border: 2px solid #E8D426;  
+      outline: 0;  
+      box-shadow: none;  
+  }  
+ 
+  .container{
+    color: white;
+    
+    width: 60%;
+    
+  }
+
+small{
+    height: 1vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.register{
+    margin: 1vw;
+}
+.register span{
+    font-weight: bold;
+    cursor: pointer;
+}
+.row{
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    padding:2% 7%;
+    margin-top: 5vh;
+    border-radius: 0.5vw;
+    color: #000;
+}
+
+.contain{
+  text-align: center;
+}

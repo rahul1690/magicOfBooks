@@ -1,0 +1,42 @@
+
+.backdiv{
+  margin: 1vh;
+}
+img {
+    margin-top: 2vh;
+    width: 20vh;
+    height: 27vh;
+    border: 10px solid #80D0C7;
+    
+    border-radius: 5px;
+  }
+
+  .contain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    
+  }
+
+.content div{
+    margin-top: 1vh;
+    padding: 1.5vh 2vw;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 6px;
+}
+
+a{
+  color: black;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list button{
+  margin:0 1vh;
+}
+  

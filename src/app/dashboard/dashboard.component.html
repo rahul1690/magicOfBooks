@@ -1,0 +1,26 @@
+
+    <mat-toolbar class="toolbar">
+      <div class="container-1">
+        <img id="logo" src="../../assets/img/book-icon.png">
+      <span class="heading" routerLink="/dashboard" (click)="isOn=true">Magic of Books</span>
+      <nav class="navBar">
+        <ul>
+            <li><button mat-raised-button color="primary" routerLink="/dashboard/booklist"  (click)="isOn=false">BookList</button></li>
+          <li><button routerLink="/dashboard/wishlist" mat-raised-button color="primary" (click)="isOn=false">WishList</button></li>
+          <li><button routerLink="/dashboard/completed" mat-raised-button color="primary" (click)="isOn=false">Completed</button></li>
+          <li><button routerLink="" mat-raised-button color="primary" (click)="isOn=false">Log out</button></li>
+        </ul>
+      </nav>
+      </div>
+    </mat-toolbar>
+  <div *ngIf = isOn>
+    <h2 >Welcome To the Magic of Books</h2>
+  <br>
+    <div class="content">
+      <div>Profile:</div>
+    <div>Name: {{user?.name}}</div>
+    <div>Email id: {{user?.email}}</div>
+    <div>Phone: {{user?.phone}}</div>
+    </div>
+  </div>
+<router-outlet></router-outlet>

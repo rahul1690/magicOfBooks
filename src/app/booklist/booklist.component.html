@@ -1,0 +1,5 @@
+
+    <div class="_container_ "  *ngFor="let book of books" (click)="bookDetails(book)">
+        <img  src="../../assets/{{book.imageLink}}" alt={{book.title}}>
+        <div>{{book.title}}</div>
+    </div>

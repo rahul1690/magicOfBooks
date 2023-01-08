@@ -1,0 +1,26 @@
+
+<div class="parent">
+  
+  <div class="backdiv">
+    <button mat-raised-button color="primary" routerLink="/dashboard/booklist">Back</button>
+  </div>
+    <div class="contain">
+
+        <div><img mat-card-image src="../../assets/{{book?.imageLink}}" alt="Photo of{{book?.title}}"></div>
+    
+        <div class="content">
+        <div>Book Id: {{book?.id}}</div>
+        <div>Title: {{book?.title}}</div>
+        <div>Author: {{book?.author}}</div>
+        <div>Country: {{book?.country}}</div>
+        <div>Language: {{book?.language}}</div>
+        <div>Pages: {{book?.pages}}</div>
+        <div>Year: {{book?.year}}</div>
+        <div >Link: <a href="{{book?.link}}" target="_blank">{{book?.link}}</a></div>
+        </div>
+      <br>
+      <div class="list"><button mat-raised-button color="primary" *ngIf="loggedIn" (click)="addWishlist(book)">Add to wishList</button><br>
+        <button mat-raised-button color="primary" *ngIf="loggedIn" (click)="addCompleted(book)">Add to completed</button> </div>
+    
+    </div>
+</div>

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('../src/assets/styles/bootstrap.min.css');
+html, body { min-height: 100%; }
+body { margin: 0; font-family: sans-serif; }
+body{
+    background-image: linear-gradient(
+        rgb(69 66 66 / 50%),
+        rgb(69 66 66 / 50%)
+      ),url("../src/assets/img/bg.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
+}
